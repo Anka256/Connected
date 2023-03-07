@@ -12,7 +12,7 @@ function scr_blue(){
 	
 	with(instance_find(obj_dotblue, 0)) {
 		if (place_meeting(x, y, obj_lineblue)) global.blue0 = true;
-		else global.blue = false;
+		else global.blue0 = false;
 	}
 	with(instance_find(obj_dotblue, 1)) {
 		if (place_meeting(x, y, obj_lineblue)) global.blue1 = true;
