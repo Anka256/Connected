@@ -1,1 +1,1 @@
-scr_whichcolor();
+scr_red();
