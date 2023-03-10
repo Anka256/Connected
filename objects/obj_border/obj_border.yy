@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_lineyellow",
+  "name": "obj_border",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_linered","path":"objects/obj_linered/obj_linered.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "yellows",
-    "path": "folders/Dots/yellows.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lineyellow",
-    "path": "sprites/spr_lineyellow/spr_lineyellow.yy",
+    "name": "spr_border",
+    "path": "sprites/spr_border/spr_border.yy",
   },
   "spriteMaskId": null,
   "visible": true,

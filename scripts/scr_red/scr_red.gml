@@ -8,6 +8,7 @@ function scr_red(){
 	else if (!redend) drawing = false; // noktaya basmıyorsa ve eşleşme yapılmadıysa çizimi durdur
 	
 	if (drawing && !redend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_linered);
+	
 								// çizim devam ama eşleşme olmamışsa lineredi oluştur sürekli
 	if !drawing instance_destroy(obj_linered);
 		// çizim durmuşsa önceki lineredleri sil
