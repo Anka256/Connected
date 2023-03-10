@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_border",
-  "eventList": [],
+  "name": "obj_play",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_border",
-    "path": "sprites/spr_border/spr_border.yy",
+    "name": "spr_play",
+    "path": "sprites/spr_play/spr_play.yy",
   },
   "spriteMaskId": null,
   "visible": true,
