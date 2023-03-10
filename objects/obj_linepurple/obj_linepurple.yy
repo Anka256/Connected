@@ -1,17 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_linegreen",
+  "name": "obj_linepurple",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_linegreen","path":"objects/obj_linegreen/obj_linegreen.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_lineorange","path":"objects/obj_lineorange/obj_lineorange.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_lineyellow","path":"objects/obj_lineyellow/obj_lineyellow.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_border","path":"objects/obj_border/obj_border.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "greens",
-    "path": "folders/Dots/greens.yy",
+    "name": "purples",
+    "path": "folders/Dots/purples.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_linegreen",
-    "path": "sprites/spr_linegreen/spr_linegreen.yy",
+    "name": "spr_linepurple",
+    "path": "sprites/spr_linepurple/spr_linepurple.yy",
   },
   "spriteMaskId": null,
   "visible": true,
