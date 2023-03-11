@@ -8,7 +8,9 @@ function scr_orange(){
 	else if (!orangeend) drawing = false;
 	
 	if (drawing && !orangeend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_lineorange);
-	if !drawing instance_destroy(obj_lineorange);
+	if !drawing {
+		instance_destroy(obj_lineorange);
+	}
 	
 	with(instance_find(obj_dotorange, 0)) {
 		if (place_meeting(x, y, obj_lineorange)) global.orange0 = true;

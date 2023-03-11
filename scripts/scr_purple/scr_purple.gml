@@ -10,7 +10,9 @@ function scr_purple(){
 	if (drawing && !purpleend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_linepurple);
 	
 								// çizim devam ama eşleşme olmamışsa linepurplei oluştur sürekli
-	if !drawing instance_destroy(obj_linepurple);
+	if !drawing {
+		instance_destroy(obj_linepurple);
+	}
 		// çizim durmuşsa önceki linepurpleleri sil
 		// eşleşme olduysa çizimi durdurmuyor o yüzden eşleşen line'ı silmiyor --> line 8
 		

@@ -8,7 +8,9 @@ function scr_yellow(){
 	else if (!yellowend) drawing = false;
 	
 	if (drawing && !yellowend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_lineyellow);
-	if !drawing instance_destroy(obj_lineyellow);
+	if !drawing {
+		instance_destroy(obj_lineyellow);
+	}
 	
 	with(instance_find(obj_dotyellow, 0)) {
 		if (place_meeting(x, y, obj_lineyellow)) global.yellow0 = true;

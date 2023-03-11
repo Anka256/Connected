@@ -8,7 +8,9 @@ function scr_green(){
 	else if (!greenend) drawing = false;
 	
 	if (drawing && !greenend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_linegreen);
-	if !drawing instance_destroy(obj_linegreen);
+	if !drawing {
+		instance_destroy(obj_linegreen);
+	}
 	
 	with(instance_find(obj_dotgreen, 0)) {
 		if (place_meeting(x, y, obj_linegreen)) global.green0 = true;
