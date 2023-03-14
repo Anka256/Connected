@@ -1,3 +1,5 @@
+
+if flag{
 if !theme_mute
 {
     theme_mute = true;
@@ -9,4 +11,5 @@ else
     theme_mute = false;
     image_index = 0;
     audio_resume_sound(snd_theme);
+}
 }
