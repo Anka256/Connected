@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Logo&Main Objects",
+    "path": "folders/Logo&Main Menu/Logo&Main Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Setting Sprites",
+    "path": "folders/Settings Menu/Setting Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

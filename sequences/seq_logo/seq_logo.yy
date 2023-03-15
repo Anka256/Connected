@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Logo&Main Menu",
+    "path": "folders/Logo&Main Menu.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Setting Objects",
+    "path": "folders/Settings Menu/Setting Objects.yy",
   },
   "parentObjectId": null,
   "persistent": true,

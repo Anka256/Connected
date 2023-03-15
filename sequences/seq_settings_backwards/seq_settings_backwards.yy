@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Setting Seqs",
+    "path": "folders/Settings Menu/Setting Seqs.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,
