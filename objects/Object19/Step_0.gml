@@ -1,0 +1,1 @@
+instance_create_layer(x,y,"ins_balls",obj_test);
