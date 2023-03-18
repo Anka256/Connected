@@ -1,1 +1,1 @@
-scr_nextstage();
+if !(room == Game15) scr_nextstage();

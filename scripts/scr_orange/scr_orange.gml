@@ -10,6 +10,7 @@ function scr_orange(){
 	if (drawing && !orangeend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_lineorange);
 	if !drawing {
 		instance_destroy(obj_lineorange);
+		instance_destroy(obj_fixorange);
 	}
 	
 	with(instance_find(obj_dotorange, 0)) {

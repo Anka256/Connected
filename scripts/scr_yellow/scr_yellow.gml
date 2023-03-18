@@ -10,6 +10,7 @@ function scr_yellow(){
 	if (drawing && !yellowend) instance_create_layer(mouse_x, mouse_y, "ins_balls", obj_lineyellow);
 	if !drawing {
 		instance_destroy(obj_lineyellow);
+		instance_destroy(obj_fixyellow);
 	}
 	
 	with(instance_find(obj_dotyellow, 0)) {
