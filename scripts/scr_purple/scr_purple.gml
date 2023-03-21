@@ -1,4 +1,5 @@
 function scr_purple(){
+	
 	tap = mouse_check_button(mb_left)
 	if (tap) {
 		purplestart = position_meeting(mouse_x, mouse_y, obj_dotpurple); // noktaya basma var'ı
@@ -14,6 +15,7 @@ function scr_purple(){
 		instance_destroy(obj_linepurple);
 		instance_destroy(obj_fixpurple);
 	}
+	
 		// çizim durmuşsa önceki linepurpleleri sil
 		// eşleşme olduysa çizimi durdurmuyor o yüzden eşleşen line'ı silmiyor --> line 8
 		

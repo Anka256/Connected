@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "purples",
-    "path": "folders/Dots/purples.yy",
+    "name": "Sprites",
+    "path": "folders/Dots/purples/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

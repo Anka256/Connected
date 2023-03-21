@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "purples",
-    "path": "folders/Dots/purples.yy",
+    "name": "Objects",
+    "path": "folders/Dots/purples/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

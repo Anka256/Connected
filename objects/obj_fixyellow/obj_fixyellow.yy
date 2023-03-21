@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "yellows",
-    "path": "folders/Dots/yellows.yy",
+    "name": "Objects",
+    "path": "folders/Dots/yellows/Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
