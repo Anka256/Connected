@@ -10,30 +10,26 @@ function scr_nextstage(){
 									if (instance_exists(obj_dotyellow)) {
 										with(obj_dotyellow) {
 											if (yellowend) {
-												audio_play_sound(snd_positive, 40, false);
-												room_goto_next();
+												obj_nextstage.next_stage = true;
 											}
 										}
 									}
 									else {
-										audio_play_sound(snd_positive, 40, false);
-										room_goto_next();
+										obj_nextstage.next_stage = true;
 									}
 								}
 							}
 						}
 						else {
-							audio_play_sound(snd_positive, 40, false);
-							room_goto_next();
-							 }
+							obj_nextstage.next_stage = true;
+						}
 					}
 				}
 			}
 			
 			else {
-				 audio_play_sound(snd_positive, 40, false);
-				 room_goto_next();
-				 }
+				 obj_nextstage.next_stage = true;
+			}
 		}
 	}
 }
