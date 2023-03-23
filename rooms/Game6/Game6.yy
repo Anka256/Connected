@@ -7,7 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_6ADA51DF_1_1_1_1_1","path":"rooms/Game6/Game6.yy",},
     {"name":"inst_49224382_1_1_1_1","path":"rooms/Game6/Game6.yy",},
     {"name":"inst_3CF7DC45_1","path":"rooms/Game6/Game6.yy",},
     {"name":"inst_3320C141_1","path":"rooms/Game6/Game6.yy",},
@@ -17,6 +16,7 @@
     {"name":"inst_19364812_1","path":"rooms/Game6/Game6.yy",},
     {"name":"inst_3686348B","path":"rooms/Game6/Game6.yy",},
     {"name":"inst_5B606A62","path":"rooms/Game6/Game6.yy",},
+    {"name":"inst_6ADA51DF_1_1_1_1_1","path":"rooms/Game6/Game6.yy",},
   ],
   "isDnd": false,
   "layers": [

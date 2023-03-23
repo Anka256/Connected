@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Game Menu Stuffs",
-    "path": "folders/Game Menu Stuffs.yy",
+    "name": "Stage Transitions",
+    "path": "folders/Stage Transitions.yy",
   },
 }
