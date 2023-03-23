@@ -1,3 +1,5 @@
+
+
 if (next_stage && stage_transition) {
 	alarm_set(1,30);
 	stage_transition = false;
