@@ -1,4 +1,5 @@
 function scr_stagetranstion() {
+	#region start sequences
 	if obj_nextstage.purpleactive && obj_nextstage.next_stage {
 		layer_sequence_create("ins_balls", tp1x, tp1y, seq_transdotpurple);
 		layer_sequence_create("ins_balls", tp2x, tp2y, seq_transdotpurple);
@@ -19,20 +20,24 @@ function scr_stagetranstion() {
 		layer_sequence_create("ins_balls", ty2x, ty2y, seq_transdotyellow);
 		obj_nextstage.yellowactive = false;
 	}
+	if obj_nextstage.bordercactive && obj_nextstage.next_stage {
+		layer_sequence_create("ins_balls", tbcx, tbcy, seq_transborder_circle);
+		obj_nextstage.bordercactive = false;
+	}
+	if obj_nextstage.bordersactive && obj_nextstage.next_stage {
+		layer_sequence_create("ins_balls", tbsx, tbsy, seq_transborder_square);
+		obj_nextstage.bordersactive = false;
+	}
+	#endregion
 	
+	#region activate next pattern
 	if instance_exists(obj_dotpurple) {
-		
-		
-		show_debug_message("dotpurp var")
 		if (instance_number(obj_dotpurple) == 4) || (obj_dotpurple.x > 1080) { 
-			show_debug_message("tanımlanma var")
 			if (instance_number(obj_dotpurple) == 4) {
-				show_debug_message("4 tane purp var")
 				var transpurple1 = instance_find(obj_dotpurple, 2);
 				var transpurple2 = instance_find(obj_dotpurple, 3);
 			}
 			else{
-				show_debug_message("4 tane purp yok")
 				var transpurple1 = instance_find(obj_dotpurple, 0);
 				var transpurple2 = instance_find(obj_dotpurple, 1);
 			}
@@ -40,27 +45,20 @@ function scr_stagetranstion() {
 			tp1y = transpurple1.y;
 			tp2x = transpurple2.x;
 			tp2y = transpurple2.y;
-	
-			
+
 			instance_destroy(transpurple1);
 			instance_destroy(transpurple2);
-			show_debug_message(string(tp1x) + " " + string(tp1y))
 			obj_nextstage.purpleactive = true;
 		}
 	}
 	
 	if instance_exists(obj_dotgreen) {
-		show_debug_message("1green var'")
-		
-		
 		if (instance_number(obj_dotgreen) == 4) || (obj_dotgreen.x > 1080) { 
 			if (instance_number(obj_dotgreen) == 4) {
-				show_debug_message("ifgreen var'")
 				var transgreen1 = instance_find(obj_dotgreen, 2);
 				var transgreen2 = instance_find(obj_dotgreen, 3);
 			}
 			else{
-				show_debug_message("elsegreen var'")
 				var transgreen1 = instance_find(obj_dotgreen, 0);
 				var transgreen2 = instance_find(obj_dotgreen, 1);
 			}
@@ -69,24 +67,20 @@ function scr_stagetranstion() {
 			tg1y = transgreen1.y;
 			tg2x = transgreen2.x;
 			tg2y = transgreen2.y;
-			show_debug_message("2green var'")
+
 			instance_destroy(transgreen1);
 			instance_destroy(transgreen2);
 			obj_nextstage.greenactive = true;
-			
 		}
 	}
 	
 	if instance_exists(obj_dotorange) {
-		show_debug_message("1orange var'")
-		
 		if (instance_number(obj_dotorange) == 4) || (obj_dotorange.x > 1080) { 
 			if (instance_number(obj_dotorange) == 4) {
 				var transorange1 = instance_find(obj_dotorange, 2);
 				var transorange2 = instance_find(obj_dotorange, 3);
 			}
 			else{
-				show_debug_message("2orange var'")
 				var transorange1 = instance_find(obj_dotorange, 0);
 				var transorange2 = instance_find(obj_dotorange, 1);
 			}
@@ -96,17 +90,13 @@ function scr_stagetranstion() {
 			to2x = transorange2.x;
 			to2y = transorange2.y;
 			
-			show_debug_message("3orange var'")
-			
 			instance_destroy(transorange1);
 			instance_destroy(transorange2);
 			obj_nextstage.orangeactive = true;
-			
 		}
 	}
+	
 	if instance_exists(obj_dotyellow) {
-		
-		
 		if (instance_number(obj_dotyellow) == 4) || (obj_dotyellow.x > 1080) { 
 			if (instance_number(obj_dotyellow) == 4) {
 				var transyellow1 = instance_find(obj_dotyellow, 2);
@@ -125,9 +115,41 @@ function scr_stagetranstion() {
 			instance_destroy(transyellow1);
 			instance_destroy(transyellow2);
 			obj_nextstage.yellowactive = true;
-			
 		}
 	}
+	
+	if instance_exists(obj_bordercircle) {
+		if (instance_number(obj_bordercircle) == 2) || (obj_bordercircle.x > 1080) { 
+			if (instance_number(obj_bordercircle) == 2) {
+				var transborderc = instance_find(obj_bordercircle, 1);
+			}
+			else{
+				var transborderc = instance_find(obj_bordercircle, 0);
+			}
+			
+			tbcx = transborderc.x;
+			tbcy = transborderc.y;
+			
+			instance_destroy(transborderc);
+			obj_nextstage.bordercactive = true;
+		}
+	}
+	
+	if instance_exists(obj_bordersquare) {
+		if (instance_number(obj_bordersquare) == 2) || (obj_bordersquare.x > 1080) { 
+			if (instance_number(obj_bordercircle) == 2) {
+				var transborders = instance_find(obj_bordersquare, 1);
+			}
+			else{
+				var transborders = instance_find(obj_bordersquare, 0);
+			}
+			
+			tbsx = transborders.x;
+			tbsy = transborders.y;
+			
+			instance_destroy(transborders);
+			obj_nextstage.bordersactive = true;
+		}
+	}
+	#endregion
 }
-
-
