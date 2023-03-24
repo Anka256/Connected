@@ -1,6 +1,7 @@
 
 
 if (next_stage && stage_transition) {
+	scr_transparticle();
 	alarm_set(1,30);
 	stage_transition = false;
 }
@@ -27,3 +28,4 @@ if (next_stage) {
 		alarm[0] = 90;
 	}
 }
+

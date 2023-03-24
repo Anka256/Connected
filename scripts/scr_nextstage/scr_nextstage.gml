@@ -1,4 +1,4 @@
-function scr_nextstage(){
+function scr_nextstage() {
 	with(obj_dotpurple) {
 		if (purpleend) {
 			if (instance_exists(obj_dotgreen)) {
